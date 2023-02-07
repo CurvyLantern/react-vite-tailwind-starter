@@ -3,7 +3,9 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./styles/tailwind.css";
 
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+const rootEl = document.getElementById("root");
+const root = ReactDOM.createRoot(rootEl)
+root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
